@@ -9,7 +9,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import com.example.eventmanagement.repository.AttendanceRepository;
 import com.example.eventmanagement.repository.EventRepository;
-import com.example.eventmanagement.repository.UserRepository;
 
 import java.time.Instant;
 import java.util.*;
@@ -69,7 +68,7 @@ public class EventService {
         List<Event> attendingEvents = attending.stream()
                 .map(Attendance::getEvent)
                 .filter(event -> !event.isArchived()) // filter archived
-                .collect(Collectors.toList());
+                .toList();
         hosted.addAll(attendingEvents);
         return hosted;
     }

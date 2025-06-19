@@ -1,6 +1,5 @@
 package com.example.eventmanagement.service;
 
-import com.example.eventmanagement.entity.Attendance;
 import com.example.eventmanagement.entity.Event;
 import com.example.eventmanagement.entity.User;
 import com.example.eventmanagement.repository.AttendanceRepository;

@@ -2,7 +2,6 @@ package com.example.eventmanagement.controller;
 
 import com.example.eventmanagement.dto.AuthRequest;
 import com.example.eventmanagement.dto.AuthResponse;
-import com.example.eventmanagement.repository.UserRepository;
 import com.example.eventmanagement.security.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
